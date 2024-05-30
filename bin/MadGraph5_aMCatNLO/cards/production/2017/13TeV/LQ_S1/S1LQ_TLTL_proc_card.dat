@@ -20,7 +20,7 @@
 #*     run as ./bin/mg5_aMC  filename                       *
 #*                                                          *
 #************************************************************
-import model LO_LQ_S1-TestJayYukLQYUK
+import model LQ_LQ_S1_runningPtclWidth-YukLQYUK
 define p = g u c d s u~ c~ d~ s~
 define j = g u c d s u~ c~ d~ s~
 define l+ = e+ mu+
