@@ -1,0 +1,43 @@
+#************************************************************
+#*                     MadGraph5_aMC@NLO                    *
+#*                                                          *
+#*                *                       *                 *
+#*                  *        * *        *                   *
+#*                    * * * * 5 * * * *                     *
+#*                  *        * *        *                   *
+#*                *                       *                 *
+#*                                                          *
+#*                                                          *
+#*         VERSION 2.6.5                 2018-02-03         *
+#*                                                          *
+#*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+#*    https://server06.fynu.ucl.ac.be/projects/madgraph     *
+#*                                                          *
+#************************************************************
+#*                                                          *
+#*               Command File for MadGraph5_aMC@NLO         *
+#*                                                          *
+#*     run as ./bin/mg5_aMC  filename                       *
+#*                                                          *
+#************************************************************
+import model LQ_LQ_S1_runningPtclWidth-YukLQYUK
+define p = g u c d s u~ c~ d~ s~
+define j = g u c d s u~ c~ d~ s~
+define p = p b b~ 
+define j = j b b~ 
+define top = t t~ 
+define bottom = b b~ 
+define Q4 = u u~ d d~ s s~ c c~ 
+define Q5 = u u~ d d~ s s~ c c~ b b~ 
+define ele = e+ e- 
+define mu = mu+ mu- 
+define tau = ta+ ta- 
+define elenu = ve ve~ 
+define munu = vm vm~ 
+define taunu = vt vt~ 
+define V = z w+ w- 
+define L = LEPF LEPFnu 
+
+generate p p > L L QCD=2 QED=2 NP>0
+
+output LQOUTPUT
